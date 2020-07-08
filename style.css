@@ -1,0 +1,90 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+p{
+    margin-bottom: 10px;
+}
+header{
+    height: 100px;
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    height: 100px;
+    margin: 0 auto;
+    /* line-height: 100px; */
+}
+ul li{
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+    margin-left: 1.5rem;
+}
+ul li.active{
+    background: #f1deb4;
+    border-radius: 5px;
+}
+.container{
+    height: 500px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card-header{
+    padding: 0.5rem 0;
+}
+.card-body h4{
+    margin: 10px 0;
+}
+.card-body p{
+    font-size: 13px;
+    margin: 0 0 40px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 20px;
+    width: 940px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    transition: grid-template-columns 0.3s ease;
+}
+
+.btn{
+    
+}
+.btn button{
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    background: #EB6649;
+    box-shadow: 0px 4px 10px rgba(235, 102, 73, 0.25);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
